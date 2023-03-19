@@ -14,10 +14,10 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3
-      - name: Install node 12
+      - name: Install node 14
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14.x'
       - name: Run Sonar
         run: |
           npm install 
