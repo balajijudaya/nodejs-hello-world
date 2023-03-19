@@ -54,4 +54,7 @@ jobs:
             -Dsonar.projectKey=rsa-nodejs-cicd
             -Dsonar.sources=.
             -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.javascript.file.suffixes=.jsx,.js
+            -Dsonar.javascript.environments=jest,node
+            -Dsonar.javascript.ignoreHeaderComments=true
  
