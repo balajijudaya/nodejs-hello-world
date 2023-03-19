@@ -20,9 +20,6 @@ jobs:
           node-version: '12.x'
       - name: Run Sonar
         run: |
-          pwd
-          ls -lart ../
-          cd ..
           npm install 
           npm run sonar
         env:
