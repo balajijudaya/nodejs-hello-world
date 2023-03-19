@@ -19,7 +19,8 @@ jobs:
           node-version: '12.x'
       - name: Run Sonar
         run: |
-          npm install sonar-scanner
+          cd ..
+          npm install 
           npm run sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}   # Generate a token on SonarQube, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
