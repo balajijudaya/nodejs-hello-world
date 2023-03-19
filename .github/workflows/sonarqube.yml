@@ -17,9 +17,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Install linters
+      - name: Run Sonar
         run: |
-          npm install
+          npm install sonar-scanner
           npm run sonar
         env:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}   # Generate a token on SonarQube, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
